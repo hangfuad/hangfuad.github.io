@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="skin.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div id="title">
+        <h1>Muhandis Survey Form</h1>
+    </div>
+    <div id="description">
+            <p>Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <div id="container">
+        <form id="survey-form">
+            <p id="name-label">
+                <label>Name</label>
+                <input id="name" type="text" class="ini" placeholder="Your Name" required>
+            </p>
+            <p id="email-label">
+                <label>Email</label>
+                <input id="email" type="email" class="ini" placeholder="Your Valid Email" required>
+            </p>
+            <p id="number-label">
+                <label>Age <span class="smaller-text">(optional)</span></label>
+                <input type="number" class="age ini" min="10" max="100" placeholder="Your Age">
+            </p>
+            <p id="dropdown">
+                <label>Which option best describes your current role?</label>
+                <select id="dropdown">
+                    <option value="student">Student</option>
+                    <option value="fulltimejob">Full Time Job</option>
+                    <option value="parttimejob">Part Time Job</option>
+                    <option value="prefernottosay">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+            <p id="radio">
+                <label>Would you recommend Muhandis to a friend?</label>
+                <hr>
+                <input class="radio" type="radio" name="radio" checked> Definitely
+                <input class="radio" type="radio" name="radio"> Maybe
+                <input class="radio" type="radio" name="radio"> Not sure
+            </p>
+            <p id="checkboxes">
+                <div><label>
+                    What do you like most? <span class="smaller-text" >(Check all that apply)</span>
+                </label>
+                </div>
+                <div><label for="checkboxes"><input type="checkbox" class="input-radio"><span>Aqidah</span>
+                </label><label for="checkboxes"><input type="checkbox" class="input-radio"><span>Aqidah</span>
+                </label><label for="checkboxes"><input type="checkbox" class="input-radio"><span>Aqidah</span>
+                </label><label for="checkboxes"><input type="checkbox" class="input-radio"><span>Aqidah</span>
+                </label><label for="checkboxes"><input type="checkbox" class="input-radio"><span>Aqidah</span>
+                </label>
+                </div>
+            </p>
+            <p id="textarea">
+                <label for="textarea">
+                    Any comments or suggestions?
+                </label>
+                <textarea id="textarea" placeholder="Enter your comment here..."></textarea>
+            </p>
+            <p>
+                <button id="submit" inputmode="submit">submit</button>
+            </p>
+        </form>
+    </div>
+</body>
+</html>

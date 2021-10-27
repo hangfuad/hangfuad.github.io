@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'montserrat', sans-serif;
+}
+#header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0.5rem;
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+    transition: ease .5s;
+}
+#header-img img{
+    width: 64px;
+    height: auto;
+    margin: 0 15px;
+}
+#header .textlogo{
+   display: flex; 
+   align-items: center;
+   font-size: 1rem;
+}
+#header .textlogo h1{
+    color: black;
+}
+#header .textlogo h1 span{
+    color: rgb(8, 187, 142);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#header #nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    text-decoration: none;
+}
+
+#header #nav-bar ul{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 1rem auto;
+    width: 70vw;
+    flex-wrap: wrap;
+
+}
+#header #nav-bar ul li{
+    text-decoration: none;
+    font-size: 18px;
+    margin: auto 1.5rem;
+    padding: auto 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    transition: ease .3s;
+}
+#header #nav-bar ul li:hover{
+    border: 2px solid rgb(4, 228, 172);
+    padding: 1px 20px;
+    border-radius: 50px;
+    border-style:inset;
+
+}
+/* home section */
+#home{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-image: linear-gradient(115deg, rgb(0,0,0,0),rgb(0,0,0,0)), url(plant-2004483_1920.jpg);
+    background-position: left;
+    
+}
+.home{
+    color: black;
+    margin: 0 10%;
+}
+.home h1{
+    font-size: 48px;
+    font-family: kaushan script;
+    font-weight: 550;
+}
+.home p{
+    font-size: 24px;
+    margin: 10px 0;
+}
+.home input{
+    width: 200px;
+    height: 50px;
+    padding: auto;
+    margin: 20px auto;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: black;
+    background-color: transparent;
+    border: 1.5px solid rgb(4, 226, 115);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.home input:hover{
+    box-shadow: inset 0px -10px 50px rgba(4, 226, 115, 0.8);
+    transition: ease .3s;
+}
+.home input:focus{
+    border: transparent;
+    background: transparent;
+    box-shadow: none;
+}
+.home input:active{
+    transform: scale(.95);
+
+}
+/* end home section */
+/* story section */
+#story{
+    width: 100%;
+    background-image: linear-gradient(115deg,rgba(180, 206, 179, 0.5),rgb(180, 206, 179, 0.6)), url(tulips-2068692_1920.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    margin: -10px 0;
+}
+#containers{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20%;
+    padding: 100px 40px;
+    background-color: rgb(236, 235, 231,.9);
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.3);
+}
+#containers h1{
+    font-family: Kaushan script;
+    color: black;
+    display: block;
+    text-align: center;
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    background-color:rgba(255, 255, 255, 0.493);
+    border-top-left-radius: 60%;
+    border-top-right-radius: 60%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 150%;
+}
+
+@media (max-width:1280px){
+    #containers,
+    #story{
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 100px;
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+.logo .description{
+    display: flex;
+}
+.description{
+    padding: 0 2rem;
+}
+
+.description h2{
+    font-size: 2rem;
+    margin: 10px 0;
+    font-weight: 900;
+}
+.description p{
+    font-size: 1.2em;
+    font-weight: 400;
+
+}
+.description p span{
+    font-style: italic;
+}
+#video{
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(120deg, rgb(219, 219, 219), rgba(255, 255, 255, 0.822), rgb(255, 255, 255));;
+}
+iframe{
+    padding: 2rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    border-style: ridge;
+    border: 1px;
+    background-color: rgba(255, 255, 255, 0.746);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+#video h2{
+    font-size: 1.5rem;
+}
+#video h2 span{
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* end story section */
+/* Product section */
+#product{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-image: linear-gradient(115deg, rgb(0,0,0,.1),rgb(0,0,0,.3)), url(background-3404345_1920.jpg);
+    background-position: left;
+    box-shadow: 0 0 20px rgb(0,0,0.3);
+    background-attachment: fixed;
+}
+#pj{
+    height: 125vh;
+    margin: 10px 30px;
+    padding: 200px 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgb(0,0,0.3);
+}
+@media (max-width:1300px){
+    #product{
+        height: 100%;
+    }
+    #pj{
+        height: 100%;
+        margin: 10px 0;
+        padding: 200px 0;
+    }
+    #produk{
+        display: flex;
+        flex-direction: column !important; 
+        width: 100%;
+        margin: 20px auto;
+    }
+    #desc{
+        margin: 2rem auto !important;
+    }
+}
+#pj .judul{
+    
+    font-family: Kaushan script;
+    color: black;
+    width: 50%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center !important;
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    background-color:rgba(219, 211, 201, 0.8);
+    border-top-left-radius: 60%;
+    border-top-right-radius: 60%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 150%;
+}
+.pj .judul h1{
+    text-align: center;
+}
+#produk{
+    display: flex;
+    flex-direction: row;
+    margin: 2.5rem auto;
+
+}
+#desc{
+    background-color: white;
+    margin: 0 1rem;
+    padding: 2rem; 
+    min-width: 375px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.3);
+    border: solid .5px whitesmoke
+}
+#desc h3{
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 10px 30px;
+    background-color: rgba(219, 211, 208,.7);
+}
+#desc .price{
+    margin: 2rem auto;
+    font-size: 2rem;
+    font-weight: 600;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    padding: 15px 10px;
+}
+#desc p{
+    font-size: 1.4rem;
+}
+#desc input {
+    padding: 10px 50px;
+    margin: 20px auto;
+    font: inherit;
+    font-weight: 500;
+    background-color: rgb(4, 226, 115,.5);
+    border: ridge whitesmoke 1px;
+    transition: ease .3s ;
+    cursor: pointer;
+}
+#desc input:hover,
+#desc input:active{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#desc input:focus{
+    transform: scale(1.1);
+    border: none;
+    background-color: rgb(250, 212, 216);
+}
+/* end Product section */
+/* form section */
+#register{
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: linear-gradient(115deg, rgb(0,0,0),rgb(0,0,0,.7));
+    background-position: left;
+}
+.last{
+    padding: 2rem;
+    margin: 2rem;
+   
+}
+.last label{
+    padding: 1rem;
+    margin: 1rem;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+form input.email{
+    width: 100%;
+    height: 40px;
+    font: inherit;
+    text-align: center;
+    margin-bottom: 20px;
+}
+form input.submit{
+    width: 50%;
+    height: 40px;
+    font: inherit;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgb(8, 187, 142);
+    border: rgb(4, 226, 115);
+    font-weight: 600;
+}
+/* end form section */
+
+/* footer */
+footer{
+    background-color: rgba(58, 57, 57, 0.8);
+    color: rgb(0, 0, 0);
+    
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin-left: auto;
+    justify-content: flex-end;
+    list-style-type: none;
+    align-items: flex-end;
+    font-size: 1rem;
+    padding-top: 10px;
+}
+footer ul li{
+    margin: 0 1.75rem;
+}
+.copyright{
+    text-align: right;
+    margin: 5px 20px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+/* end footer */

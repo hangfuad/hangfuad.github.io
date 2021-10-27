@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+*{
+    font-family: 'poppins', sans-serif;
+
+}
+body{
+    font-family: 'poppins', sans-serif;
+    color: white;
+    background-image: linear-gradient(115deg,rgba(124, 102, 43, 0.7),rgba(0, 0, 0, 0.4)), url(gift-548290_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+
+#title{
+    margin: 10% 0 0px 0;
+}
+#title h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+#description{
+    margin: -30px 0 25px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+
+}
+#container{
+    background-color: rgba(1, 10, 14, 0.253);
+    margin: 30px auto;
+    padding: 20px 10px 30px 0px;
+    text-align: left;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 10px;
+    min-width: 650px;
+
+}
+@media (max-width: 750px) {
+    #container{
+        min-width: 450px;
+        width:500px;
+        padding: 5%;
+    }
+}
+@media (max-width: 550px) {
+    #container{
+        width: 100%;
+        position: relative;
+        margin: 10px -20px;
+        padding: auto;
+    }
+
+}
+
+#survey-form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    display: flex;
+    width: 95%;
+    height: 25px;
+    border-radius: 10px;
+    padding:10px;
+    margin: 10px 0;
+    position: relative;
+}
+select{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+}
+
+.radio,
+.checkboxes{
+
+    
+}
+p #textarea{
+    margin-bottom: 25px;
+}
+#textarea #textarea{
+    margin-top: 25px;
+}
+
+textarea{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100% !important;
+    resize: vertical;
+    padding: 10px;
+    
+}
+button{
+  border: none;
+  margin: -2rem 0;
+  font: inherit;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.25rem;
+  background-color: green;
+    
+}
